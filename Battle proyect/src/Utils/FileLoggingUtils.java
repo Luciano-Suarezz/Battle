@@ -19,19 +19,12 @@ public class FileLoggingUtils {
 
             // Set the logging level
             logger.setLevel(Level.INFO);
-
-            // Log messages
-            logger.severe("This is a severe message.");
-            logger.warning("This is a warning message.");
-            logger.info("This is an info message.");
-            logger.config("This is a config message.");
-            logger.fine("This is a fine message.");
-            logger.finer("This is a finer message.");
-            logger.finest("This is the finest message.");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
     public static void viewLog() {
+    }
+    public static void deleteLog() {
     }
 }

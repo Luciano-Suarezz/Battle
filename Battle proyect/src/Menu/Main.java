@@ -20,20 +20,20 @@ public class Main {
             switch (option) {
                 case 1 ->  Random.Start();
                 case 2 -> Personalized.Start();
-                case 3 -> mainMenu();
-                case 4 -> mainMenu();
-                case 5 -> mainMenu();
+                case 3 -> Utils.FileLoggingUtils.viewLog();
+                case 4 -> Utils.FileLoggingUtils.deleteLog();
+                case 5 -> System. exit(0);
                 default -> opcionIncorrecta();
 
             }
         } catch (InputMismatchException e) {
-            System.out.println("Debe ingresar un numero");
+            System.out.println("The input needs to be a number");
             Sleep.Main(3000);
             mainMenu();
         }
     }
     public static void opcionIncorrecta(){
-        System.out.println("Option no valida");
+        System.out.println("Not a valid option");
         Sleep.Main(3000);
         for (int i = 0; i < 100; i++) { // Clear screen
             System.out.println();
